@@ -1,5 +1,7 @@
 package com.starrysky.infocollection.crawlers;
 
+import cn.wanghaomiao.seimi.core.Seimi;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -35,5 +37,10 @@ public class CrawlerUtil {
             e.printStackTrace();
             return 0;
         }
+    }
+
+    public static void crawlBili(){
+        Seimi seimi = new Seimi();
+        seimi.goRun("crawler_bili");
     }
 }
